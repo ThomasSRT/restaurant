@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bon Appétit</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+        section {
+            padding: 2em;
+        }
+        .reservation-form input, .reservation-form button {
+            display: block;
+            margin: 1em 0;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+        .menu-item img {
+            width: 100px;
+            height: 100px;
+            margin-right: 1em;
+        }
+        .testimonials {
+            display: flex;
+            flex-direction: column;
+        }
+        .testimonial {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+        .testimonial img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 1em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2em;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./ressources/signature.png" alt="Logo">
+        <a href="#reservation">Réservation</a>
+        <a href="#menu">Carte</a>
+        <a href="#testimonials">Témoignages</a>
+    </nav>
+
+    <section id="reservation">
+        <h2>Réservation</h2>
+        <form class="reservation-form">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="time">Heure de réservation :</label>
+            <input type="time" id="time" name="time" required>
+            <label for="people">Nombre de personnes :</label>
+            <input type="number" id="people" name="people" required>
+            <button type="submit">Réserver</button>
+        </form>
+    </section>
+
+    <section id="menu">
+        <h2>Carte</h2>
+        <div class="menu-item">
+            <img src="./ressources/food_1_dark.jpg" alt="Plat 1">
+            <div>
+                <h3>Boeuf aux haricots</h3>
+                <p>Viande locale cuit au feu de bois avec des légumes bio.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="./ressources/food_4_dark.jpg" alt="Plat 2">
+            <div>
+                <h3>Hamburger</h3>
+                <p>Viande cuite à point avec un bon fromage fondu, dans un pain produit sur place.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="./ressources/food_5_dark.jpg" alt="Plat 3">
+            <div>
+                <h3>Crevettes du chef</h3>
+                <p>La recette spéciale du chef : Crevettes dans une sauce crémeuse avec un peu de basilic</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="./ressources/food_7_dark.jpg" alt="Plat 4">
+            <div>
+                <h3>Steak accompagné</h3>
+                <p>Un steak cuit selon vos préférences avec un oeuf, des tomates et une branche de romarin</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="./ressources/food_6_dark.jpg" alt="Plat 5">
+            <div>
+                <h3>Poisson au vin</h3>
+                <p>Un poisson entouré d'une sauce au vin avec de la roquette</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="./ressources/food_8_dark.jpg" alt="Plat 6">
+            <div>
+                <h3>Spaghetti</h3>
+                <p>Spaghetti préparés à la main par le chef</p>
+            </div>
+        </div>
+
+        <h2>Les masterclass du chef Michel BOUILLON</h2>
+        <img src="./ressources/food_10_dark.jpg" alt="Photo 1">
+        <img src="./ressources/food_2_dark.jpg" alt="Photo 2">
+    </section>
+
+    <section id="testimonials">
+        <h2>Témoignages clients</h2>
+        <div class="testimonial">
+            <img src="./ressources/testimonial_1_dark.jpg" alt="personne 1">
+            <div>
+                <h4>Mélissa Soulet</h4>
+                <p>Date de publication: 01/01/2024</p>
+                <p>Nourriture exellente ! On voit que le chef y met toute sa passion.</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <img src="./ressources/testimonial_2_dark.jpg" alt="personne 2">
+            <div>
+                <h4>Camille Serge</h4>
+                <p>Date de publication: 02/02/2024</p>
+                <p>Accueil chaleureux et service rapide, expérience agréable. Je recommande à tout le monde.</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <img src="./ressources/testimonial_3_dark.jpg" alt="personne 3">
+            <div>
+                <h4>Corine Carne</h4>
+                <p>Date de publication: 03/03/2024</p>
+                <p>Serveur à l'écoute et de bon conseil. Je me suis régalée.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contactez-nous : contact@bonappetit.com</p>
+        <p>Adresse : 123 Rue de la Gastronomie, 75000 Paris, France</p>
+        <p>Horaires d'ouverture : Lundi - Vendredi : 12h - 22h, Samedi - Dimanche : 10h - 23h</p>
+        <p>Suivez-nous sur :
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+            <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </p>
+        <p>Crédits : Développé par Thomas et Raphaël</p>
+        <p><a href="mentions-legales.html" target="_blank">Mentions légales</a></p>
+    </footer>
+</body>
+</html>
